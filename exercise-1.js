@@ -3,7 +3,7 @@ let user1= {
     name: "John",
     years: 30
 };
-  const { name, years: age, isAdmin = false } = user;
+  const { name, years: age, isAdmin=false }=user1;
 
   console.log(name); 
   console.log(age); 
@@ -33,4 +33,36 @@ let user1= {
 //5.
 
 //In this case it is possible change the property value of the constant.
-// But It's not a good practice as anything declared with constant keyword cannot be reassigned.  
+// But It's not a good practice as anything declared with constant keyword cannot be reassigned.
+
+//6. 
+ 
+const salaries = {
+  Fred: 100,
+  Ted: 160,
+  Ghaith: 130
+};
+let sum = 0;
+for (const salary of Object.values(salaries)) {
+  sum += salary;
+  }
+  if (Object.keys(salaries).length === 0) {
+    sum = 0;
+  }
+  
+  console.log(`The sum of salaries is: ${sum}`);
+
+//7.
+
+result = (a + b < 4) ? 'Below' : 'Over';
+
+//8.
+
+const message = login === 'Employee'
+  ? 'Hello'
+  : login === 'Director'
+  ? 'Greetings'
+  : login === ''
+  ? 'No login'
+  : '';
+console.log(message);
