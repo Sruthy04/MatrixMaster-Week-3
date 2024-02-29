@@ -13,5 +13,4 @@ function factorialize(n) {
         return factorial;
     }
    }
-  
-   console.log(factorialize(5)); 
+     console.log(factorialize(5)); 
