@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="pomodoro.css" />
+</head>
+
+<body>
+ <div id="timer-message">Please select a timer before starting.</div>
+
+ <div class="container">
+  <div class="timer">
+   <h2>🍅 Pomodoro Timer</h2>
+
+   <div class="button-container">
+    <button class="button" id="pomodoro-session">Work</button>
+    <button class="button" id="short-break">Short Break</button>
+    <button class="button" id="long-break">Long break</button>
+   </div>
+
+   <div id="pomodoro-timer" class="timer-display" data-duration="25.00">
+    25:00
+   </div>
+
+   <div id="short-timer" class="timer-display" data-duration="5.00">
+    5:00
+   </div>
+
+   <div id="long-timer" class="timer-display" data-duration="10.00">
+    10:00
+   </div>
+
+   <div id="buttons">
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+   </div>
+  </div>
+ </div>
+ <script src="pomodoro.js"></script>
+</body>
+
+</html>
